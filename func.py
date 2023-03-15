@@ -13,7 +13,7 @@ def div(x, y):
     return x / y
 
 def mult(x, y):
-   return x * y
+    return x * y 
 
 def exp(x, y):
     return x ** y 
@@ -33,8 +33,9 @@ a = 1
 b = -3
 c = 1
 
-x1 = ... # TODO: write a code to compute the first root of the quadratic equation
-x2 = ... # TODO: then do the same for the second root
+
+x1 = div((add(neg(b),sqrt(sub(exp(neg(b),2),mult(4,(mult(a,c))))))),mult(2,a)) # TODO: write a code to compute the first root of the quadratic equation
+x2 = div((sub(neg(b),sqrt(sub(exp(neg(b),2),mult(4,(mult(a,c))))))),mult(2,a)) # TODO: then do the same for the second root
 # Note: Make sure to remove the ellipsis (...) when you're writing your code
 
 print("First root:" + str(x1))
